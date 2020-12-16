@@ -12,6 +12,7 @@ const Hero = props => (
 
 Hero.propTypes = {
   titleText: PropTypes.node,
+  imageAddress: PropTypes.node,
 };
 
 export default Hero;
