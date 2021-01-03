@@ -6,7 +6,9 @@ import PropTypes from 'prop-types';
 
 const Info = () => (
   <Container>
-    <Hero titleText={infoContent.title} backgroundImage={infoContent.image} />
+    <Hero 
+      titleText={infoContent.title} 
+      image={infoContent.image} />
     <p>{infoContent.content}</p>
   </Container>
 );

@@ -14,7 +14,6 @@ class List extends React.Component {
     title: PropTypes.node,
     description: PropTypes.node,
     columns: PropTypes.array,
-    imageAddress: PropTypes.string,
     columnTitle: PropTypes.string,
     image: PropTypes.string,
     addColumn: PropTypes.func,
@@ -32,7 +31,7 @@ class List extends React.Component {
         <section className={styles.component}>
           <Hero 
             titleText={title} 
-            imageAddress={image} />
+            image={image} />
           <div className={styles.description}>
             {ReactHtmlParser(description)}
           </div>

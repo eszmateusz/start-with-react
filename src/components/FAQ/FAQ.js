@@ -6,7 +6,9 @@ import PropTypes from 'prop-types';
 
 const FAQ = () => (
   <Container>
-    <Hero titleText={FAQContent.title} backgroundImage={FAQContent.image} />
+    <Hero 
+      titleText={FAQContent.title} 
+      image={FAQContent.image} />
     <p>{FAQContent.content}</p>
   </Container>
 );
