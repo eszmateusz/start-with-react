@@ -1,42 +1,20 @@
 import React from 'react';
-import styles from './App.scss';
-import PropTypes from 'prop-types';
-import List from '../List/ListContainer';
-// import {pageContents, listData} from '../../data/dataStore';
-import Search from '../Search/SearchContainer';
+import Home from '../Home/HomeContainer';
+import Info from '../Info/Info';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import MainLayout from '../MainLayout/MainLayout';
+import FAQ from '../FAQ/FAQ';
 
-class App extends React.Component {
-//  render() {
-//    return (
-//      <main className={styles.component}>
-//        <h1 className={styles.title}>{pageContents.title}</h1>
-//        <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
-//        {/*
-//        <List {...listData} />
-//        */}
-//      </main>
-//    );
-//  }
+const App = () => (
+  <BrowserRouter>
+    <MainLayout>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/info' component={Info} />
+        <Route exact path='/faq' component={FAQ} />
+      </Switch>
+    </MainLayout>
+  </BrowserRouter>
+);
 
-  static propTypes = {
-    title: PropTypes.node,
-    subtitle: PropTypes.node,
-    lists: PropTypes.array,
-  }
-
-  render() {
-    const {title, subtitle, lists} = this.props;
-    return (
-      <main className={styles.component}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search />
-        {lists.map(listData => (
-          <List key={listData.id} {...listData} />
-        ))}
-      </main>
-    );
-  }
-}
-
-export default App;
+export default App; 
