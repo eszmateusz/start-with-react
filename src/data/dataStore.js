@@ -34,65 +34,24 @@ export const FAQContent = {
   content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum lorem.',
 };
 
-export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
-  image: 'src/components/Hero/space.png',
-  columns: [
-    {
-      key: 0,
-      title: 'Books',
-      icon: 'book',
-      cards: [
-        {
-          key: 0,
-          title: 'This Is Going to Hurt',
-        },
-        {
-          key: 1,
-          title: 'Interpreter of Maladies',
-        },
-      ],
-    },
-    {
-      key: 1,
-      title: 'Movies',
-      icon: 'film',
-      cards: [
-        {
-          key: 0,
-          title: 'Harry Potter',
-        },
-        {
-          key: 1,
-          title: 'Star Wars',
-        },
-      ],
-    },
-    {
-      key: 2,
-      title: 'Games',
-      icon: 'gamepad',
-      cards: [
-        {
-          key: 0,
-          title: 'The Witcher',
-        },
-        {
-          key: 1,
-          title: 'Skyrim',
-        },
-      ],
-    },
-  ],
-};
-
 const lists = [
   {
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://images.pexels.com/photos/2387877/pexels-photo-2387877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  },
+  {
+    id: 'list-2',
+    title: 'Countries to visit in the near <sub>future!</sub>',
+    description: 'Places to visit during the next year.',
+    image: 'https://images.pexels.com/photos/4577858/pexels-photo-4577858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  },
+  {
+    id: 'list-3',
+    title: 'CDs to listen next <sup>month!</sup>',
+    description: 'Albums that I have to listen!',
+    image: 'https://images.pexels.com/photos/3693108/pexels-photo-3693108.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   },
 ];
 
@@ -118,8 +77,38 @@ const columns = [
   {
     id: 'column-4',
     listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    title: 'Europe',
+    icon: 'globe-africa',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Asia',
+    icon: 'umbrella-beach',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-2',
+    title: 'USA',
+    icon: 'hotel',
+  },
+  {
+    id: 'column-7',
+    listId: 'list-3',
+    title: 'Pop',
+    icon: 'compact-disc',
+  },
+  {
+    id: 'column-8',
+    listId: 'list-3',
+    title: 'Rock',
+    icon: 'guitar',
+  },
+  {
+    id: 'column-9',
+    listId: 'list-3',
+    title: 'Hip-hop',
+    icon: 'headphones-alt',
   },
 ];
 
@@ -153,6 +142,66 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'Sweden',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'Georgia',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-5',
+    title: 'Israel',
+  },
+  {
+    id: 'card-10',
+    columnId: 'column-5',
+    title: 'Nepal',
+  },
+  {
+    id: 'card-11',
+    columnId: 'column-6',
+    title: 'Argentina',
+  },
+  {
+    id: 'card-12',
+    columnId: 'column-6',
+    title: 'Mexico',
+  },
+  {
+    id: 'card-13',
+    columnId: 'column-7',
+    title: 'Shakira',
+  },
+  {
+    id: 'card-14',
+    columnId: 'column-7',
+    title: 'Billie Eilish',
+  },
+  {
+    id: 'card-15',
+    columnId: 'column-8',
+    title: 'The Black Eyed Peas',
+  },
+  {
+    id: 'card-16',
+    columnId: 'column-8',
+    title: 'Mumford & Sons',
+  },
+  {
+    id: 'card-17',
+    columnId: 'column-9',
+    title: 'Eminem',
+  },
+  {
+    id: 'card-18',
+    columnId: 'column-9',
+    title: '2Pac',
   },
 ];
 
